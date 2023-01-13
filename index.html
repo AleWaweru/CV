@@ -15,6 +15,75 @@
      padding: 15px 0;
     background: crimson;
 }
+/*Prices styling*/
+
+.wrapper{
+    width: 900px;
+    margin: 5% auto;
+}
+.single-price{
+    width: 33%;
+    background: #262626;
+    float: left;
+    margin-top: 2% ;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+    text-align:center;
+    transition: 0.9s;
+}
+.price{
+    width: 130px;
+    height: 90px;
+    border-radius: 50%;
+    border:2px solid #da4357;
+    border-color:#da4357;
+    margin: 5% auto 0 auto;
+    text-align: center;
+}
+.deals {
+    margin-top: 10%;
+}
+.single-price h1{
+    font-size: 18px;
+    color: #fff;
+    line-height: 3;
+    text-transform: uppercase;
+}
+.price h2{
+    font-size: 38px;
+    color: #fff;
+}
+.deals h4{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+}
+.single-price:hover{
+    background: #da4357;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 25px;
+}
+.single-price:hover .price{
+    border-color: #fff;
+}
+.single-price a{
+    text-decoration: none;
+    background: #da4357;
+    color: #fff;
+    padding: 10px 60px;
+    display: inline-block;
+    margin: 10% auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.single-price:hover a{
+    background: #262626;
+    color: #fff;
+}
 
 
     </style>
@@ -43,6 +112,7 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#prices" class="menu-btn">Prices</a></li>
                 <li><a href="#skill" class="menu-btn">Skills</a></li>
                 <li><a href="#teams" class="menu-btn">Teams</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
@@ -157,28 +227,28 @@
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>60%</span>
+                            <span>80%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>Javascript</span>
-                            <span>50%</span>
+                            <span>60%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>PHP</span>
-                            <span>60%</span>
+                            <span>65%</span>
                         </div>
                         <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>MySQL</span>
-                            <span>70%</span>
+                            <span>80%</span>
                         </div>
                         <div class="line mysql"></div>
                     </div>
@@ -241,10 +311,102 @@
 
     </section>
 
+    <!--PRICE TAGS section
+    <section class="prices" id="prices">
+        <div class="max-width">
+            <h2 class="Title">Our Prices</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="team2.jpeg" alt="#">
+                        <div class="text">Web/Graphic designers </div>
+                        <p>We have one of the web designers, with a touch to quality themes, appearances and models</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="digitalmarketing.jpeg" alt="#">
+                        <div class="text">Digital Marketers</div>
+                        <p>With the latest  difital marketing tools such as SEO, our marketing will make your website,blog,product and sercives fly to the world</p>
+                
+                    </div>
+                </div>
+                <div class="card box">
+                    <div class="box">
+                        <img src="appdev.jpeg" alt="#">
+                        <div class="text">App Developers</div>
+                        <p>We create applications designed at solving,reducing and managing stress running different components of your  business, <b color="#1B9E7F">SAY THE CHALLENGE,  WE GIVE THE SOLUTION</b> </p>
+                
+                    </div>
+                </div>
+            
+
+            </div>
+
+        </div>
+
+    </section>--> 
+    <section class="prices" id="prices">
+        <div div class="max-width">
+            <h2 class="Title">Our Prices</h2>
+    
+            <div class="wrapper">
+                <div class="single-price">
+              <h1>Basic</h1>
+            <div class="price">
+                <h2>$100</h2>
+            </div>
+            <div class="deals">
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+            </div>
+            <a href="#">select</a>
+
+        </div>
+        <div class="single-price">
+            <h1>Standard</h1>
+            <div class="price">
+                <h2>$200</h2>
+            </div>
+            <div class="deals">
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+            </div>
+            <a href="#">select</a>
+
+        </div>
+        <div class="single-price">
+            <h1>Premium</h1>
+            <div class="price">
+                <h2>$300</h2>
+            </div>
+            <div class="deals">
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+                <h4>Lorem ipsum dolor.</h4><br>
+            </div>
+            <a href="#">select</a>
+
+        </div>
+
+    </div>
+</div>
+</section>
+<br><br><br><br><br>
+
     <!--contact section-->
 
     <section class="contact" id="contact">
-        <div class="max-width">
+        <div class="max-width"><br><br><br><br>
             <h2 class="Title">Contact me</h2>
             <div class="contact-content">
                 <div class="column left">
@@ -276,6 +438,9 @@
                     </div>
                 </div>
                 </div>
+
+                
+                
                 <div class="column right">
                     <div class="text">Message me</div>
                     <!--<form action="#">
@@ -303,7 +468,10 @@
                             </div>
 
                         </div>
-                    </form>-->
+
+                        
+                    </form>
+                                            CONTACT FORM-->
                     <div class="container">
                         <form action="dbconnect.php" method="post">
                     
