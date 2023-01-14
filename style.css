@@ -430,7 +430,7 @@ section .Title::after {
 
 
 .prices .Title::after{
-    content:"Who With Me";
+    content:"Our Changes";
 }
 .prices .carousel .card{
     background:#222;
